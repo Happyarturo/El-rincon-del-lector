@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1984 - El Rincón del Lector</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>1984</h1>
+        <marquee behavior="scroll" direction="left" scrollamount="4">¡Una visión distópica que sigue siendo relevante!</marquee>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../libros/libros.html">Libros</a></li>
+            <li><a href="../paginas/quienes_somos.html">Quiénes Somos</a></li>
+            <li><a href="../paginas/ofertas.html">Ofertas</a></li>
+            <li><a href="../paginas/faq.html">FAQ</a></li>
+            <li><a href="../paginas/contacto.html">Contacto</a></li>
+			<li><a href="../paginas/privacidad.html">Privacidad</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="detalle-libro">
+            <h2>1984 - George Orwell</h2>
+            <img src="../imagenes/libro_distopia.jpg" alt="Portada de 1984" style="max-width: 300px; height: auto; display: block; margin: 15px auto;">
+            <p>"1984" es una novela distópica que presenta un futuro totalitario donde el "Gran Hermano" lo ve todo, y el Partido controla cada aspecto de la vida. A través de la historia de Winston Smith, la obra explora temas como la vigilancia masiva, la manipulación de la historia, la represión del pensamiento y la resistencia individual.</p>
+
+            <h3>Detalles del Libro</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Autor</td>
+                        <td>George Orwell</td>
+                    </tr>
+                    <tr>
+                        <td>Género</td>
+                        <td>Distopía, Ficción Política</td>
+                    </tr>
+                    <tr>
+                        <td>Año de Publicación</td>
+                        <td>1949</td>
+                    </tr>
+                    <tr>
+                        <td>Páginas</td>
+                        <td>~328 (depende de la edición)</td>
+                    </tr>
+                    <tr>
+                        <td>ISBN</td>
+                        <td>978-XX-XXXX-XXX-E</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Precio: $18.00</h3>
+            <p><a href="../gracias.html" class="boton-compra">Añadir al Carrito (simulado)</a></p>
+        </section>
+
+        <section id="libros-relacionados">
+            <h2>También te podría interesar...</h2>
+            <div class="libro-relacionado">
+                <a href="el_principe.html">
+                    <img src="../imagenes/libro_politica.jpg" alt="El Príncipe">
+                    <p>El Príncipe - Maquiavelo</p>
+                </a>
+            </div>
+            <div class="libro-relacionado">
+                <a href="etica_nicomaco.html">
+                    <img src="../imagenes/etica_a_nicomaco.jpg" alt="Ética a Nicómaco">
+                    <p>Ética a Nicómaco - Aristóteles</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 El Rincón del Lector. Todos los derechos reservados.</p>
+        <p>Fecha de última actualización: <span id="fecha-hora-1984"></span></p>
+    </footer>
+
+    <script>
+        const fechaHoraElement1984 = document.getElementById('fecha-hora-1984');
+        if (fechaHoraElement1984) {
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+            fechaHoraElement1984.textContent = now.toLocaleDateString('es-ES', options);
+        }
+    </script>
+</body>
+</html>

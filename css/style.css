@@ -1,0 +1,277 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente más básica */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo claro y plano */
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #0D47A1; /* Azul muy oscuro */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tamaño de fuente ligeramente ajustado */
+}
+
+/* Logo (Imagen de sustitución) */
+#logo-tienda {
+    width: 200px; /* Aumentado el tamaño del logo */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Marquesina */
+marquee {
+    background-color: #FFEB3B; /* Amarillo más brillante y plano */
+    color: #555;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1.2em; /* Tamaño de fuente aumentado */
+    border-top: 1px solid #ccc; /* Borde simple */
+    border-bottom: 1px solid #ccc; /* Borde simple */
+}
+
+/* Navegación */
+nav {
+    background-color: #333; /* Gris oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px; /* Espaciado ajustado */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+nav ul li a:hover {
+    color: #FFC107; /* Amarillo al pasar el mouse (se mantiene para feedback básico) */
+}
+
+/* Contenido principal */
+main {
+    padding: 20px; /* Padding ajustado */
+    margin: 15px auto; /* Margen ajustado */
+    max-width: 960px; /* Ancho máximo ajustado */
+    background-color: #fff;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Borde simple */
+}
+
+section h2 {
+    color: #0D47A1; /* Color azul para los títulos de sección (coincide con el encabezado) */
+    border-bottom: 1px solid #eee; /* Borde inferior más simple */
+    padding-bottom: 8px; /* Padding ajustado */
+    margin-bottom: 15px; /* Margen ajustado */
+}
+
+/* Estilos de tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px; /* Margen ajustado */
+}
+
+table, th, td {
+    border: 1px solid #ccc; /* Borde simple */
+}
+
+th, td {
+    padding: 10px; /* Padding ajustado */
+    text-align: left;
+}
+
+th {
+    background-color: #e0e0e0; /* Fondo gris claro */
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f0f0; /* Fondo alterno más simple */
+}
+
+/* Contenedor para el listado de libros (Flexbox) */
+#coleccion-completa {
+    display: flex; /* Habilitar Flexbox */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan a la siguiente línea */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    border: none; /* Eliminar el borde de la sección para que el gap funcione mejor visualmente */
+    padding: 0; /* Eliminar padding de la sección */
+}
+
+/* Estilos para cada elemento de libro en el listado */
+.libro-listado {
+    flex: 0 0 calc(33.33% - 20px); /* Aproximadamente 3 columnas con gap */
+    max-width: calc(33.33% - 20px); /* Asegurar que no exceda el ancho */
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0; /* Eliminar margen para usar gap */
+}
+
+.libro-listado img {
+    max-width: 100%;
+    height: 220px; /* Altura fija para las imágenes */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.libro-listado p {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 8px;
+}
+
+/* Estilos para productos destacados (se mantienen para index.html) */
+.libro-destacado, .libro-relacionado {
+    display: inline-block;
+    width: 48%; /* Ancho para dos columnas */
+    margin: 1%; /* Margen ajustado */
+    vertical-align: top;
+    text-align: center;
+    border: 1px solid #ccc; /* Borde simple */
+    padding: 10px; /* Padding ajustado */
+    background-color: #fff; /* Fondo blanco */
+    box-sizing: border-box; /* Asegurar que padding y border se incluyan en el width */
+}
+
+.libro-destacado img, .libro-relacionado img {
+    max-width: 100%;
+    height: 180px; /* Altura fija para las imágenes */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px; /* Margen ajustado */
+}
+
+.libro-destacado p, .libro-relacionado p {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    font-size: 1em; /* Tamaño de fuente ajustado */
+    margin-top: 8px; /* Margen ajustado */
+}
+
+
+/* Estilos para formularios */
+form {
+    background-color: #f9f9f9;
+    padding: 20px; /* Padding ajustado */
+    border: 1px solid #ddd; /* Borde simple */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px; /* Margen ajustado */
+    font-weight: bold;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: calc(100% - 20px); /* Ancho ajustado */
+    padding: 8px; /* Padding ajustado */
+    margin-bottom: 10px; /* Margen ajustado */
+    border: 1px solid #ccc; /* Borde simple */
+    font-size: 0.9em; /* Tamaño de fuente ajustado */
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background-color: #0D47A1; /* Azul oscuro para el botón de submit */
+    color: white;
+    padding: 10px 15px; /* Padding ajustado */
+    border: none;
+    cursor: pointer;
+    font-size: 1em; /* Tamaño de fuente ajustado */
+}
+
+form input[type="submit"]:hover {
+    background-color: #0A3D91; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Estilos para el botón de compra simulado */
+.boton-compra {
+    display: inline-block;
+    background-color: #0D47A1; /* Azul oscuro para el botón de compra */
+    color: white;
+    padding: 10px 15px; /* Padding ajustado */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em; /* Tamaño de fuente ajustado */
+    margin-top: 10px; /* Margen ajustado */
+}
+
+.boton-compra:hover {
+    background-color: #0A3D91; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px; /* Margen ajustado */
+}
+
+/* Configuración básica de márgenes y sangrías */
+p {
+    margin-bottom: 1em;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 1em;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    /* En pantallas medianas (tablets), 2 columnas */
+    .libro-listado {
+        flex: 0 0 calc(50% - 20px); /* 2 columnas con gap */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    /* En pantallas pequeñas (móviles), 1 columna */
+    .libro-listado {
+        flex: 0 0 calc(100% - 20px); /* 1 columna con gap */
+        max-width: calc(100% - 20px);
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - El Rincón del Lector</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Política de Privacidad</h1>
+        <marquee behavior="alternate" direction="left" scrollamount="3">Tu privacidad es importante para nosotros.</marquee>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../libros/libros.html">Libros</a></li>
+            <li><a href="../paginas/quienes_somos.html">Quiénes Somos</a></li>
+            <li><a href="../paginas/ofertas.html">Ofertas</a></li>
+            <li><a href="../paginas/faq.html">FAQ</a></li>
+            <li><a href="../paginas/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Recopilación de Información</h2>
+            <p>En El Rincón del Lector, recopilamos información personal solo cuando es estrictamente necesario para brindarte nuestros servicios, como cuando realizas una compra o te suscribes a nuestro boletín. Esta información puede incluir tu nombre, dirección de correo electrónico, dirección de envío y detalles de pago. Todos los datos son tratados con la máxima confidencialidad.</p>
+
+            <h2>Uso de la Información</h2>
+            <p>La información recopilada se utiliza para procesar tus pedidos, mejorar tu experiencia de compra, enviar actualizaciones sobre el estado de tu pedido, y, si has dado tu consentimiento, enviarte promociones y noticias relevantes sobre libros.</p>
+
+            <h2>Protección de Datos</h2>
+            <p>Implementamos medidas de seguridad técnicas y organizativas para proteger tus datos personales contra accesos no autorizados, alteraciones, divulgaciones o destrucciones. Nos comprometemos a mantener la confidencialidad de tu información.</p>
+
+            <h2>Cookies</h2>
+            <p>Nuestro sitio web utiliza cookies para mejorar la experiencia de navegación, recordar tus preferencias y analizar el tráfico del sitio. Puedes configurar tu navegador para que rechace las cookies, aunque esto podría afectar la funcionalidad de algunas partes del sitio.</p>
+
+            <h2>Cambios en la Política de Privacidad</h2>
+            <p>Nos reservamos el derecho de actualizar esta política de privacidad en cualquier momento. Cualquier cambio será publicado en esta página. Te recomendamos revisar periódicamente esta sección para estar informado sobre cómo protegemos tu información.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 El Rincón del Lector. Todos los derechos reservados.</p>
+        <p>Fecha de última actualización: <span id="fecha-hora-privacidad"></span></p>
+    </footer>
+
+    <script>
+        const fechaHoraElementPrivacidad = document.getElementById('fecha-hora-privacidad');
+        if (fechaHoraElementPrivacidad) {
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+            fechaHoraElementPrivacidad.textContent = now.toLocaleDateString('es-ES', options);
+        }
+    </script>
+</body>
+</html>

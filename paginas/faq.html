@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - El Rincón del Lector</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Preguntas Frecuentes (FAQ)</h1>
+        <marquee>Resolvemos tus dudas más comunes.</marquee>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../libros/libros.html">Libros</a></li>
+            <li><a href="../paginas/quienes_somos.html">Quiénes Somos</a></li>
+            <li><a href="../paginas/ofertas.html">Ofertas</a></li>
+            <li><a href="../paginas/contacto.html">Contacto</a></li>
+			<li><a href="../paginas/privacidad.html">Privacidad</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Preguntas sobre Envíos</h2>
+            <h3>¿Cuánto tiempo tarda el envío?</h3>
+            <p>Normalmente, los envíos dentro del país demoran entre 3 y 5 días hábiles. Para envíos internacionales, el tiempo puede variar entre 7 y 15 días hábiles, dependiendo del destino.</p>
+
+            <h3>¿Cuál es el costo del envío?</h3>
+            <p>El costo de envío se calcula al finalizar la compra, basándose en el peso de los libros y la dirección de entrega. ¡Recuerda que la primera compra tiene envío gratis!</p>
+        </section>
+
+        <section>
+            <h2>Preguntas sobre Pagos</h2>
+            <h3>¿Qué métodos de pago aceptan?</h3>
+            <p>Aceptamos tarjetas de crédito/débito (Visa, MasterCard), PayPal y transferencias bancarias.</p>
+
+            <h3>¿Es seguro mi pago?</h3>
+            <p>Sí, utilizamos plataformas de pago seguras con encriptación SSL para proteger tus datos financieros.</p>
+        </section>
+
+        <section>
+            <h2>Preguntas Generales</h2>
+            <h3>¿Ofrecen libros en formato digital (eBooks)?</h3>
+            <p>Actualmente, nos centramos en libros físicos, pero estamos trabajando para expandirnos a formatos digitales en el futuro cercano.</p>
+
+            <h3>¿Cómo puedo contactar con el servicio al cliente?</h3>
+            <p>Puedes enviarnos un mensaje a través de nuestro <a href="contacto.html">formulario de contacto</a> o llamarnos al teléfono indicado en la sección de contacto.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 El Rincón del Lector. Todos los derechos reservados.</p>
+        <p>Fecha de última actualización: <span id="fecha-hora-faq"></span></p>
+    </footer>
+
+    <script>
+        const fechaHoraElementFaq = document.getElementById('fecha-hora-faq');
+        if (fechaHoraElementFaq) {
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+            fechaHoraElementFaq.textContent = now.toLocaleDateString('es-ES', options);
+        }
+    </script>
+</body>
+</html>

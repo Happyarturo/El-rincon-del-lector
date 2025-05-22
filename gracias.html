@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias por tu Mensaje - El Rincón del Lector</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>¡Gracias por tu mensaje!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="libros/etica_nicomaco.html">Libros</a></li>
+            <li><a href="paginas/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section style="text-align: center; padding: 50px;">
+            <h2>Tu mensaje ha sido enviado correctamente.</h2>
+            <p>Te responderemos a la brevedad posible.</p>
+            <p>Regresa a la <a href="index.html">página principal</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 El Rincón del Lector. Todos los derechos reservados.</p>
+        <p>Fecha de última actualización: <span id="fecha-hora-gracias"></span></p>
+    </footer>
+
+    <script>
+        const fechaHoraElementGracias = document.getElementById('fecha-hora-gracias');
+        if (fechaHoraElementGracias) {
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+            fechaHoraElementGracias.textContent = now.toLocaleDateString('es-ES', options);
+        }
+    </script>
+</body>
+</html>

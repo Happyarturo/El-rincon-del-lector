@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - El Rincón del Lector</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiénes Somos</h1>
+        <marquee behavior="scroll" direction="left" scrollamount="4">Conoce nuestra historia y amor por los libros.</marquee>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../libros/libros.html">Libros</a></li>
+            <li><a href="../paginas/ofertas.html">Ofertas</a></li>
+            <li><a href="../paginas/faq.html">FAQ</a></li>
+            <li><a href="../paginas/contacto.html">Contacto</a></li>
+			<li><a href="../paginas/privacidad.html">Privacidad</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Nuestra Historia</h2>
+            <p>El Rincón del Lector nació en 2020 de un sueño compartido por un grupo de amigos apasionados por la literatura. Queríamos crear un espacio donde los amantes de los libros pudieran encontrar joyas literarias, desde clásicos atemporales hasta las últimas novedades, con un enfoque especial en la filosofía y el pensamiento crítico. Nuestra misión es fomentar la lectura y el aprendizaje continuo.</p>
+            <p>A lo largo de los años, hemos crecido, pero nuestra esencia se mantiene: ofrecer una selección curada de libros y un servicio cercano y amigable a nuestra comunidad de lectores.</p>
+        </section>
+
+        <section>
+            <h2>Nuestro Equipo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Rol</th>
+                        <th>Libro Favorito</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Arturo Cruz</td>
+                        <td>Fundador y Curador</td>
+                        <td>"Cien años de soledad"</td>
+                    </tr>
+                    <tr>
+                        <td>Alejandro Terrazas</td>
+                        <td>Especialista en Filosofía</td>
+                        <td>"Así habló Zaratustra"</td>
+                    </tr>
+                    <tr>
+                        <td>Alejandra Domínguez</td>
+                        <td>Atención al Cliente</td>
+                        <td>"Orgullo y prejuicio"</td>
+					</tr>
+					<tr>
+						<td>Gustavo Hernández</td>
+						<td>Atención al cliente</td>
+						<td>"El baile del zopilote"</td>
+					</tr>
+					<tr>
+						<td>Leonardo Banda</td>
+						<td>Desarrolador</td>
+						<td>"La mentira universal"</td>
+					</tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 El Rincón del Lector. Todos los derechos reservados.</p>
+        <p>Fecha de última actualización: <span id="fecha-hora-quienes"></span></p>
+    </footer>
+
+    <script>
+        const fechaHoraElementQuienes = document.getElementById('fecha-hora-quienes');
+        if (fechaHoraElementQuienes) {
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+            fechaHoraElementQuienes.textContent = now.toLocaleDateString('es-ES', options);
+        }
+    </script>
+</body>
+</html>
